@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&family=Fraunces:wght@700;900&display=swap');
+:root {
+  --clr-darker-grey:#2a2a2a;
+  --clr-white:#D5D5D5;
+}
+html{
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Fraunces', serif;
+  overflow: hidden;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+
+ 
+  color: var(--clr-darker-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 50rem;
+  backdrop-filter: blur(10px); 
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+@media (max-width: 768px) {
+  .container  {
+    flex-direction: column;
+  }
+}
+aside {
+  padding: 0.5rem 1rem;
+  width: 16rem;
+}
+main {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  background-color:  var(--clr-darker-grey);
+  color: var(--clr-white);
+  border-radius: 1rem;
+  width: 90%;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+h2 {
+  border-bottom: 1px solid var(--clr-white);
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.users {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  border-top: 1px solid var(--clr-white);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.button-54 {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-darker-grey);
+  cursor: pointer;
+  margin: 1rem 0;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
